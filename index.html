@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 첫 번째 웹사이트</title>
+</head>
+<body>
+    <header>
+        <h1>나의 웹사이트에 오신 것을 환영합니다!</h1>
+    </header><link rel="stylesheet" href="style.css">
+
+
+    <nav>
+        <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">연락처</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>웹사이트 소개</h2>
+        <p>여기는 나의 첫 번째 웹사이트입니다. 앞으로 더 멋진 웹사이트로 발전시킬 거예요!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 나의 웹사이트</p>
+    </footer>
+    <script>
+        // DOM이 모두 로드된 후 실행되도록 설정
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.createElement('button');
+            button.textContent = 'Click me!';
+            document.body.appendChild(button);
+    
+            button.addEventListener('click', function() {
+                alert('버튼을 클릭했습니다!');
+            });
+        });
+    </script>
+    
+</body>
+</html>
